@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Gaia Admin</title>
+    <title>OLD2C | Admin Interface</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
@@ -22,7 +22,7 @@
     <section id="container">
         <!-- header -->
         <header id="header">
-            <div class="brand"><a href="index.html" class="logo"><span>OLD<sub>2</sub>C</span></a></div>
+            <div class="brand"><a href="/admin/dashboard" class="logo"><span>OLD<sub>2</sub>C</span></a></div>
             <div class="toggle-navigation toggle-left">
                 <button type="button" class="btn btn-default" id="toggle-left" data-toggle="tooltip" data-placement="right" title="Toggle Navigation">
                     <i class="fa fa-bars"></i>
@@ -50,14 +50,14 @@
                 <div id="leftside-navigation" class="nano">
                     <ul class="nano-content">
                         <li class="active">
-                            <a href="#"><i class="fa fa-dashboard"></i><span>Dashboard</span></a>
+                            <a href="/admin/dashboard"><i class="fa fa-dashboard"></i><span>Dashboard</span></a>
                         </li>
                         <li class="sub-menu">
-                            <a href="javascript:void(0);"><i class="fa fa-user"></i><span>Players</span><i class="arrow fa fa-angle-right pull-right"></i></a>
-                            <ul>
+                            <a href="/admin/players"><i class="fa fa-user"></i><span>Players</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+             {{--                <ul>
                                 <li><a href="/admin/news"><i class="arrow fa fa-angle-right"></i>View All</a></li>
                                 <li><a href="/admin/news/create"><i class="arrow fa fa-angle-right"></i>Create New</a></li>
-                            </ul>
+                            </ul> --}}
                         </li>
                         <!-- 
                         <li class="sub-menu">

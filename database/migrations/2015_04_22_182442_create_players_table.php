@@ -1,0 +1,45 @@
+<?php
+
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class CreatePlayersTable extends Migration {
+
+	/**
+	 * Run the migrations.
+	 *
+	 * @return void
+	 */
+	public function up()
+	{
+		Schema::create('players', function(Blueprint $table)
+		{
+			$table->increments('id');
+			$table->integer('steam_id');
+			$table->string('steam_nickname');
+			$table->string('steam_url');
+			$table->string('steam_avatar');
+			$table->string('role')->index();
+			$table->string('level');
+
+			$table->integer('team_id')->unsigned()->default(1);
+			$table->foreign('team_id')
+						->references('id')
+						->on('teams')
+						->onDelete('cascade');
+
+			$table->timestamps();
+		});
+	}
+
+	/**
+	 * Reverse the migrations.
+	 *
+	 * @return void
+	 */
+	public function down()
+	{
+		Schema::drop('players');
+	}
+
+}

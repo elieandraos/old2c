@@ -15,6 +15,7 @@
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function()
 {
    Route::get('/dashboard', ['as' => 'admin.dashboard.index', 'uses' => 'Admin\DashboardController@index']);
+   Route::get('/players', ['as' => 'admin.players.index', 'uses' => 'Admin\PlayerController@index']);
 });
 
 
