@@ -103,6 +103,10 @@ body .table>tbody>tr>td
   font-style: italic;
   color: #555;
 }
+button.btn-primary.btn-trans, 
+button.btn-default.btn-trans,
+input.btn-trans
+{ font-size: 11px }
 /* ==========================================================================
    Layout
    ========================================================================== */

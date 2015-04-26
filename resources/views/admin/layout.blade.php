@@ -54,10 +54,6 @@
                         </li>
                         <li class="sub-menu">
                             <a href="/admin/players"><i class="fa fa-user"></i><span>Players</span><i class="arrow fa fa-angle-right pull-right"></i></a>
-             {{--                <ul>
-                                <li><a href="/admin/news"><i class="arrow fa fa-angle-right"></i>View All</a></li>
-                                <li><a href="/admin/news/create"><i class="arrow fa fa-angle-right"></i>Create New</a></li>
-                            </ul> --}}
                         </li>
                         <!-- 
                         <li class="sub-menu">
@@ -73,11 +69,11 @@
                         -->
                         <li class="sub-menu">
                             <a href="javascript:void(0);"><i class="fa fa-users"></i><span>Teams</span><i class="arrow fa fa-angle-right pull-right"></i></a>
-                           <!-- <ul>
-                                <li><a href="pages-blank.html"><i class="arrow fa fa-angle-right"></i>Blank Page</a></li>
-                                <li><a href="pages-login.html"><i class="arrow fa fa-angle-right"></i>Login</a></li>
-                                <li><a href="pages-sign-up.html"><i class="arrow fa fa-angle-right"></i>Sign Up</a></li>
-                            </ul> -->
+                           <ul>
+                                <li>
+                                    <a href="/admin/teams/create"><i class="arrow fa fa-angle-right"></i>Create</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="sub-menu">
                             <a href="javascript:void(0);"><i class="fa fa-headphones"></i><span>Matches</span><i class="arrow fa fa-angle-right pull-right"></i></a>
@@ -106,8 +102,11 @@
     <script type="text/javascript" src="/admin/js/jquery-2.1.3.min.js"></script>
     <script type="text/javascript" src="/admin/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/admin/js/bootstrap-datepicker.min.js"></script>
-    <script type="text/javascript" src="/admin/js/jquery.slugify.js"></script>
     <script type="text/javascript" src="/admin/js/sweet-alert.min.js"></script>
     <script type="text/javascript" src="/admin/js/application.js"></script>
+
+    <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0-rc.2/css/select2.min.css" rel="stylesheet" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0-rc.2/js/select2.min.js"></script>
+
 </body>
 </html>

@@ -7,8 +7,8 @@ var app = function() {
         menu();
         togglePanel();
         datepickers();
-        slugify();
         handleRemoteForms();
+        enhanceSelectBox();
     };
 
     //set up tooltips
@@ -58,11 +58,11 @@ var app = function() {
         });
     };
 
-    //sluggify url input
-    var slugify = function()
+
+    var enhanceSelectBox = function()
     {
-        $('.txt-slug').slugify('.slug-target');
-    };
+         $('#players_list').select2();
+    }
 
     //handle remote form submission
     var handleRemoteForms = function()

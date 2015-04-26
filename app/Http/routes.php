@@ -15,7 +15,14 @@
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function()
 {
    Route::get('/dashboard', ['as' => 'admin.dashboard.index', 'uses' => 'Admin\DashboardController@index']);
+   //players route
    Route::get('/players', ['as' => 'admin.players.index', 'uses' => 'Admin\PlayerController@index']);
+   //teams routes
+   Route::get('/teams/', ['as' => 'admin.teams.index', 'uses' => 'Admin\TeamController@index']);
+   Route::get('/teams/create', ['as' => 'admin.teams.create', 'uses' => 'Admin\TeamController@create']);
+   Route::get('/teams/{id}/edit', ['as' => 'admin.teams.edit', 'uses' => 'Admin\TeamController@edit']);
+   Route::post('/teams/store', ['as' => 'admin.teams.store', 'uses' => 'Admin\TeamController@store']);
+   Route::post('/teams/{id}/update', ['as' => 'admin.teams.update', 'uses' => 'Admin\TeamController@update']);
 });
 
 
