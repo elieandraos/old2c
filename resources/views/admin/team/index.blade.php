@@ -38,6 +38,7 @@
 										<i class="fa fa-pencil-square-o"></i>
 									</button>
 								</a>
+								@include('admin.team._players')
 								@endif
 							</td>
 						</tr>

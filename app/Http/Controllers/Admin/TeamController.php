@@ -87,4 +87,11 @@ class TeamController extends Controller {
 		//
 	}
 
+
+	public function players($id)
+	{
+		$team = Team::find($id);
+		return $team->players;
+	}
+
 }

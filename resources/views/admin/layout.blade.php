@@ -70,9 +70,8 @@
                         <li class="sub-menu">
                             <a href="javascript:void(0);"><i class="fa fa-users"></i><span>Teams</span><i class="arrow fa fa-angle-right pull-right"></i></a>
                            <ul>
-                                <li>
-                                    <a href="/admin/teams/create"><i class="arrow fa fa-angle-right"></i>Create</a>
-                                </li>
+                                <li><a href="/admin/teams"><i class="arrow fa fa-angle-right"></i>List</a></li>
+                                <li><a href="/admin/teams/create"><i class="arrow fa fa-angle-right"></i>Create</a></li>
                             </ul>
                         </li>
                         <li class="sub-menu">

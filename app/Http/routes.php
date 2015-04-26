@@ -23,6 +23,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function()
    Route::get('/teams/{id}/edit', ['as' => 'admin.teams.edit', 'uses' => 'Admin\TeamController@edit']);
    Route::post('/teams/store', ['as' => 'admin.teams.store', 'uses' => 'Admin\TeamController@store']);
    Route::post('/teams/{id}/update', ['as' => 'admin.teams.update', 'uses' => 'Admin\TeamController@update']);
+   Route::get('/teams/{id}/players', ['as' => 'admin.teams.players', 'uses' => 'Admin\TeamController@players']);
 });
 
 
